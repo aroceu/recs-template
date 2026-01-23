@@ -298,7 +298,7 @@
                         <li>In <code>style.css</code>, modify the variables under <code>:root{}</code> to reflect colors, fonts, and other styles you prefer. This is not necessary if you would like your page to be styled like the preview.</li>             
                         </ol>
 
-                    <p>You can also download the files from <a href="">Github</a>.</p>
+                    <p>You can also download the files from <a href="https://github.com/aroceu/recs-template">Github</a>.</p>
 
                     <p><code>&lt;spoiler&gt;</code> is supported as well, and will black out text when used <spoiler>like this</spoiler> (highlight to view).</p>
 
