@@ -151,6 +151,13 @@ a:hover, a:active, a:focus{
     background: #e1f5f8;
 }
 
+#footer{
+    text-align: center;
+    margin: 2em 0;
+    padding-top: 2em;
+    border-top: var(--border-size) var(--border-style) var(--accent-light);
+}
+
 
             @media (max-width: 900px) {
                 main {
