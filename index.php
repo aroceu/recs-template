@@ -119,10 +119,6 @@
                 cursor: pointer;
             }
 
-            summary{
-    list-style: none;
-}
-
 .preview a {
     display: inline-block;
 }

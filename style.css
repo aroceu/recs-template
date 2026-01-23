@@ -484,4 +484,8 @@ details summary {
         margin-left: var(--size-quarter);
         font-size: 0.7rem;
     }
+
+    #footer{
+        margin-top: 0;
+    }
 }
