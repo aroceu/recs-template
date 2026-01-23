@@ -485,7 +485,7 @@ ships: ["Oliver/Barry", "Cisco/Hartley"],
 
                 <ol>
                     <li>After <code>&lt;/main&gt;</code>, find this line. You will be working within/beneath it:</li>
-                        <pre>&lt;script type="text/javascript"&gt;</pre>
+                        <pre>&lt;script&gt;</pre>
                     <li>Locate <code>const filters = {</code>. Beneath it, in the curly brackets <code>{}</code>, add (or edit the category you're replacing) the following line: <pre><font color="red">ship</font>: new Set(),</pre></li>
                     <li>If the new/changed field is to have <strong>any/all</strong> filter options:</li>
                         <ol>
@@ -693,7 +693,7 @@ author: "TornThorn",
         <p>Note that Ratings have <code>&lt;span class="filter-mode"&gt;</code> commented out in order not to display the any/all option, due to the nature of ratings. 
         However, if you want to allow this option, making <code>filter-mode</code> visible will still functionally work.</p>
 
-        <p>If you choose to replace Ratings with another category instead, make sure that all <code><strong>rating</strong>(<strong>s</strong>)</code> under <code>&lt;script type="text/javascript"&gt;</code> are updated for your replacement category as well.</p>
+        <p>If you choose to replace Ratings with another category instead, make sure that all <code><strong>rating</strong>(<strong>s</strong>)</code> under <code>&lt;script&gt;</code> are updated for your replacement category as well.</p>
 
         <h2 id="advanced-template-styling">Using both templates with different styling</h2>
 

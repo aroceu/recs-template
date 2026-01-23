@@ -2,15 +2,16 @@
 <!-- things in the code written in brackets led by an exclamation mark OR a forward slash with asterisks are code comments, and do not show up on the webpage, only in the code -->
 <!-- there are some comments like this in the code to help you out! -->
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">
 
   <!-- the code below links to my own image, but you can link it to an image to show as the icon of your website in web browsers -->
-  <link rel="icon" type="image/png" href="../favicon.png" />
+  <link rel="icon" type="image/png" href="../favicon.png">
 
   <!-- this links to and reads the stylesheet rules -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
   
   <!-- this is the name of your website in your web browser -->
   <title>My Fanfiction Recs</title>
@@ -143,7 +144,7 @@
     <!-- end footer -->
   </main>
 
-  <script type="text/javascript">
+  <script>
     const items = [
       /** BEGINNING OF RECS
       

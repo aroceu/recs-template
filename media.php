@@ -4,14 +4,14 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">
 
   <!-- the code below links to my own image, but you can link it to an image to show as the icon of your website in web browsers -->
-  <link rel="icon" type="image/png" href="../favicon.png" />
+  <link rel="icon" type="image/png" href="../favicon.png">
 
   <!-- this links to and reads the stylesheet rules -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 
   <!-- this is the name of your website in your web browser -->
   <title>My Media Recs</title>
@@ -142,7 +142,7 @@
     <!-- end footer -->
   </main>
 
-  <script type="text/javascript">
+  <script>
     const items = [
 
       /** BEGINNING OF RECS
