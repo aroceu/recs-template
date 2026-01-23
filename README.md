@@ -2,7 +2,7 @@
 
 A set of templates for media and fanfiction recommendation pages.
 
-See https://kingdra.net/fan/recs for full documentation and customization options.
+See https://fan.kingdra.net/recs for full documentation and customization options.
 
 ---
 
@@ -22,7 +22,7 @@ These are templates for rec pages on an independent website where you can create
 
 The templates have been pre-formatted for media and fanfiction recommendations in mind, but you can use them for whatever you want.
 
-Full documentation: https://kingdra.net/fan/recs
+Full documentation: https://fan.kingdra.net/recs
 
 ---
 
