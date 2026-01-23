@@ -76,7 +76,7 @@ Instructions for use and customization are within the code of each webpage templ
 
     - Note: Both the media and the fanfiction templates use the same style.css, so you only need one if you are using both templates and want them to feature the same colors/styling.
 
-    - If you would like them to be different, see Advanced Customizations.
+    - If you would like them to be different, see **Advanced Customizations**.
 
 10. In `style.css`, modify the variables under `:root{}` to reflect colors, fonts, and other styles you prefer. This is not necessary if you would like your page to be styled like the preview.
 
