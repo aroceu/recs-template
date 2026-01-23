@@ -1,0 +1,482 @@
+:root {
+    /** customize your style by changing the variables in these brackets **/
+    
+    --body-background: #fff;
+    --main-background: #fff; /** the main content area. keep it the same as body-background if you want a seamless look **/
+    --card-background: #f4f4f4; /** cards for each recommendation **/
+    --legend-background: var(--accent-light); /** legend boxes; defined below. you can change this to a different defined or fixed color **/
+    --thoughts-background: var(--accent-light); /** each rec thought; defined below. you can change this to a different defined or fixed color **/
+    --text: #333;
+    --meta-color: #666; 
+    --link-hover: var(--text); 
+    --accent: #16a9b8; 
+    --accent-dark: #1a7882; 
+    --accent-light: #e9f7fa; 
+    --border-color: var(--accent-dark); 
+    --highlight-color: #aee6ec; 
+    
+    /** these are default browser font styles, but you can name specific fonts, ex. 'Georgia'**/
+    --main-font: sans-serif;
+    --h1-font: monospace;
+    --legend-font: monospace;
+    --button-font: sans-serif; /** clear filter button **/
+    --rec-header-font: monospace; /** rec headers **/
+    
+    /** these can be changed to solid, dotted, dashed, double, and none. it combines with border-size in some cases **/
+    --main-border-style: solid;
+    --link-border-style: dotted; /** links only, also can be wavy **/
+    
+    /** some sizing, which you can change but I highly advise for you to keep the provided units (em, %, and px respectively). smaller than 1 can be used as decimals, e.g. 0.8 **/
+    --line-height: 150%;
+    --main-width: 75em; /** main content area where main-background (above) is applied **/
+    --card-width: 20em; /** 3 column on base desktop screen; increase by 5+ to reduce number of columns, decrease by 5+ to increase number of columns **/
+    --border-size: 2px;
+    --h1-size: 2.5em;
+    --rec-header-size: 1.75em;
+    --legend-font-size: calc(var(--base-size) * 1.25);
+    --button-text-size: 0.9em; /** clear filter button text size **/
+    --max-legend-size: 20em; /** maximum height for the legend boxes **/
+    --label-size: 0.8em;
+    
+    /** calculations for sizing, you might not want to touch these **/
+    --base-size: 1em;
+    --size-quarter: calc(var(--base-size) / 4);
+    --size-half: calc(var(--base-size) / 2);
+    --size-one-half: calc(var(--base-size) * 1.5);
+    --size-double: calc(var(--base-size) * 2);
+}
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) var(--main-background);
+}
+
+p,
+details {
+    padding: var(--size-half) 0;
+}
+
+ul,
+ol {
+    margin: var(--base-size) var(--size-double);
+}
+
+li {
+    padding-left: var(--base-size);
+}
+
+body {
+    background: var(--body-background);
+    color: var(--text);
+    font: normal var(--base-size) / var(--line-height) var(--main-font);
+}
+
+main {
+    background: var(--main-background);
+    width: var(--main-width);
+    max-width: 95%;
+    margin: 0 auto;
+    padding: var(--size-one-half);
+}
+
+#head {
+    margin: 0 auto;
+    padding: var(--size-one-half) 0;
+    border-bottom: var(--border-size) var(--main-border-style) var(--accent);
+    text-align: center;
+}
+
+#blurb {
+    padding: var(--size-double) 0;
+    border-bottom: var(--border-size) var(--main-border-style) var(--accent);
+    text-align: center;
+    margin-bottom: var(--size-double);
+}
+
+h1 {
+    font: normal var(--h1-size) var(--h1-font);
+    text-transform: lowercase;
+    color: var(--accent);
+    padding: var(--size-half) 0;
+}
+
+#head h1 {
+    padding-bottom: 0;
+}
+
+h2,
+h3 {
+    /** rec headers; h2 for media, h3 for fanfiction because of links **/
+    font: normal var(--rec-header-size) var(--rec-header-font);
+    color: var(--accent-dark);
+    margin: 0 0 var(--size-half);
+}
+
+h2 {
+    /** media rec headers have a border bottom **/
+    border-bottom: var(--border-size) var(--main-border-style) var(--accent);
+}
+
+strong {
+    color: var(--accent-dark);
+}
+
+.summary strong {
+    color: var(--text);
+}
+
+em {
+    color: var(--accent);
+}
+
+u {
+    border-bottom: var(--border-size) var(--link-border-style) var(--accent);
+}
+
+mark {
+    background-color: var(--highlight-color);
+}
+
+a:link,
+a:visited {
+    color: var(--accent);
+    -webkit-text-decoration-line: var(--link-border-style);
+    text-decoration-line: var(--link-border-style);
+    text-decoration: underline;
+    text-decoration-style: var(--link-border-style);
+    text-decoration-thickness: var(--border-size);
+    text-decoration-color: var(--accent);
+    -webkit-text-decoration-color: var(--accent);
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: var(--link-hover);
+    -webkit-text-decoration-line: var(--link-border-style);
+    text-decoration-line: var(--link-border-style);
+    text-decoration: underline;
+    text-decoration-style: var(--main-border-style);
+    text-decoration-thickness: var(--border-size);
+    text-decoration-color: var(--accent-dark);
+    -webkit-text-decoration-color: var(--accent-dark);
+    box-shadow: inset 0px -5px 0 0px var(--accent-light);
+}
+
+spoiler {
+    background: var(--text) !important;
+    color: var(--text) !important;
+}
+
+details {
+    display: inline;
+}
+
+details summary {
+    cursor: pointer;
+    color: var(--accent-dark);
+    font-weight: bold;
+}
+
+details summary:hover {
+    color: var(--accent);
+    text-decoration-color: var(--accent);
+}
+
+details summary::marker {
+    content: "" !important;
+}
+
+summary{
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none !important; /* For Safari and Chrome (WebKit/Blink) */
+}
+
+details summary::after {
+    content: " ▶";
+}
+
+details[open] summary::after {
+    content: " ▼";
+}
+
+details[open] summary {
+    color: var(--meta-color);
+}
+
+summary:hover{
+    cursor: pointer;
+}
+
+#reset {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+button#resetFilters {
+    background: var(--body-background);
+    color: var(--text);
+    border: var(--border-size) var(--main-border-style) var(--accent);
+    padding: var(--size-half) var(--base-size);
+    cursor: pointer;
+    font: normal var(--button-text-size) / var(--line-height) var(--button-font);
+}
+
+button#resetFilters:hover {
+    color: var(--body-background);
+    background: var(--accent);
+}
+
+.filters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--size-one-half);
+    margin-bottom: calc(var(--size-double) + 1em);
+}
+
+fieldset {
+    border: none;
+    height: var(--max-legend-size);
+    font: normal var(--base-size) var(--legend-font);
+    position: relative;
+    z-index: 0;
+}
+
+.filter-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -1em;
+    position: relative;
+    z-index: 1;
+}
+
+.filter-header span{
+    background: var(--main-background);
+    padding: var(--size-quarter);
+}
+
+.filter-options {
+    border: var(--border-size) solid var(--accent);
+    padding: var(--base-size);
+    background: var(--legend-background);
+    height: var(--max-legend-size);
+    overflow-y: auto;
+}
+
+legend{
+    display: none;
+}
+
+.legend {
+    padding: 0 var(--size-half);
+    font: normal var(--legend-font-size) var(--legend-font);
+    color: var(--accent-dark);
+    text-transform: lowercase;
+    position: relative;
+    margin: 0 var(--size-half);
+}
+
+label {
+    display: block;
+    margin: var(--size-half) 0;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.filter-mode {
+    display: inline-flex;
+    margin-right: var(--size-half);
+    padding: 0 var(--size-quarter);
+    gap: var(--base-size);
+}
+
+.filter-mode label {
+    display: inline-block;
+    color: var(--accent);
+    font-size: var(--label-size);
+    margin: 0;
+    vertical-align: super;
+    text-transform: uppercase;
+}
+
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--card-width), 1fr));
+    gap: var(--size-double) var(--size-one-half);
+}
+
+.card {
+    background: var(--card-background);
+    border: var(--border-size) solid var(--border-color);
+    padding: var(--base-size);
+}
+
+.meta {
+    font-size: 0.85rem;
+    color: var(--meta-color);
+    border-bottom: var(--border-size) var(--main-border-style) var(--accent);
+    margin: var(--base-size) 0;
+    padding-bottom: var(--base-size);
+}
+
+.summary {
+    margin: var(--size-half) 0 var(--base-size);
+    font-size: 0.9rem;
+}
+
+.thoughts {
+    margin: var(--size-half) 0;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--meta-color);
+    background: var(--thoughts-background);
+    padding: var(--base-size);
+    border: var(--border-size) var(--main-border-style) var(--accent);
+}
+
+.empty {
+    grid-column: 1 / -1;
+    font-style: italic;
+    color: var(--accent-dark);
+}
+
+#footer {
+    margin: var(--base-size) 0 0;
+    padding: var(--size-double) 0 0;
+    text-align: center;
+    text-transform: lowercase;
+    font-size: calc(var(--base-size) * 0.85);
+}
+
+/* Cross-browser text selection styles */
+::selection {
+    background-color: var(--highlight-color);
+    color: var(--text);
+}
+
+::-moz-selection {
+    background-color: var(--highlight-color);
+    color: var(--text);
+}
+
+::-webkit-selection {
+    background-color: var(--highlight-color);
+    color: var(--text);
+}
+
+/* Disable text selection on interactive elements */
+button,
+.filter-mode label,
+details summary {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Allow text selection on content areas */
+.summary,
+.thoughts,
+.meta {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+/* Tablet/iPad responsive styles */
+@media screen and (max-width: 900px) {
+    :root {
+        --main-width: 90%;
+        --card-width: 18em;
+        --h1-size: 2em;
+        --rec-header-size: 1.5em;
+        --legend-font-size: calc(var(--base-size) * 1.1);
+        --max-legend-size: 15em;
+    }
+    
+    main {
+        padding: var(--base-size);
+    }
+    
+    .filters {
+        grid-template-columns: 1fr;
+        gap: var(--base-size);
+    }
+    
+    .filter-options {
+        height: var(--max-legend-size);
+    }
+    
+    #results {
+        grid-template-columns: repeat(auto-fit, minmax(var(--card-width), 1fr));
+        gap: var(--base-size);
+    }
+}
+
+/* Smartphone responsive styles */
+@media screen and (max-width: 480px) {
+    :root {
+        --main-width: 95%;
+        --card-width: 100%;
+        --h1-size: 1.75em;
+        --rec-header-size: 1.25em;
+        --legend-font-size: calc(var(--base-size) * 1);
+        --max-legend-size: 12em;
+    }
+    
+    main {
+        padding: var(--size-quarter);
+    }
+    
+    #blurb {
+        font-size: 0.9em;
+        margin: var(--base-size) 0 var(--size-one-half);
+        padding: var(--size-half) 0 var(--base-size);
+    }
+    
+    .filters {
+        grid-template-columns: 1fr;
+        gap: var(--size-half);
+    }
+    
+    fieldset {
+        height: var(--max-legend-size);
+    }
+    
+    .filter-options {
+        height: var(--max-legend-size);
+        padding: var(--size-half);
+    }
+    
+    .legend {
+        font-size: var(--legend-font-size);
+    }
+    
+    #results {
+        grid-template-columns: 1fr;
+        gap: var(--base-size);
+    }
+    
+    .card {
+        padding: var(--base-size);
+    }
+    
+    label {
+        font-size: 0.9em;
+    }
+    
+    .filter-mode label {
+        margin-left: var(--size-quarter);
+        font-size: 0.7rem;
+    }
+}
