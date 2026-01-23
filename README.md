@@ -22,7 +22,7 @@ These are templates for rec pages on an independent website where you can create
 
 The templates have been pre-formatted for media and fanfiction recommendations in mind, but you can use them for whatever you want.
 
-See https://kingdra.net/fan/recs for full documentation and customization options.
+Full documentation: https://kingdra.net/fan/recs
 
 ---
 
@@ -52,7 +52,7 @@ Instructions for use and customization are within the code of each webpage templ
 
 # Installation
 
-1. Go to the template for [media recs](media) or [fanfiction recs](fanfiction), depending on which template you would like to use. You may use both.
+1. Go to the preview template for [media recs](https://fan.kingdra.net/recs/media) or [fanfiction recs](https://fan.kingdra.net/recs/fanfiction), depending on which template you would like to use. You may use both.
 
 2. On the template webpage, right click and select *View Page Source*.
 
@@ -70,13 +70,13 @@ Instructions for use and customization are within the code of each webpage templ
 
 `/** Below are my recs. Delete them and replace with your own. (You can delete this line as well) **/`
 
-8. See **Basic Customizations** below to add your own recs. Once you've added them, you're mostly done with the `.html` file. (Some exceptions may apply.)
+8. See **Basic Customizations** in the [full documentation](https://fan.kingdra.net/recs/) add your own recs. Once you've added them, you're mostly done with the `.html` file. (Some exceptions may apply.)
 
 9. Now, go to the rec templates' `style.css` and copy/paste everything into your own `style.css` file. Save it in the same folder as your `.html` file.
 
     - Note: Both the media and the fanfiction templates use the same style.css, so you only need one if you are using both templates and want them to feature the same colors/styling.
 
-    - If you would like them to be different, see **Advanced Customizations**.
+    - If you would like them to be different, see **Advanced Customizations** in the [full documentation](https://fan.kingdra.net/recs/).
 
 10. In `style.css`, modify the variables under `:root{}` to reflect colors, fonts, and other styles you prefer. This is not necessary if you would like your page to be styled like the preview.
 
