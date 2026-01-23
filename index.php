@@ -186,8 +186,23 @@ a:hover, a:active, a:focus{
             }
 
             @media (max-width: 600px) {
-                h1 {
+                *, html{
+                    --webkit-text-size-adjust: none;
+                }
+                body{
+                    font-size: 0.9em;
+                }
+                h1{
                     font-size: 1.5em;
+                }
+                h2{
+                    font-size: 1.3em;
+                }
+                .preview-grid{
+                    display: block;
+                }
+                .preview{
+                    margin-bottom: 1em;
                 }
                 main {
                     padding: 0.5em;

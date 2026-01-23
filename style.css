@@ -403,6 +403,10 @@ details summary {
         --legend-font-size: calc(var(--base-size) * 1.1);
         --max-legend-size: 15em;
     }
+
+    *, html{
+        --webkit-text-size-adjust: none;
+    }
     
     main {
         padding: var(--base-size);
@@ -437,6 +441,10 @@ details summary {
         --rec-header-size: 1.25em;
         --legend-font-size: calc(var(--base-size) * 1);
         --max-legend-size: 12em;
+    }
+
+    *, html{
+        --webkit-text-size-adjust: none;
     }
     
     main {
