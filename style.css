@@ -158,9 +158,6 @@ a:hover,
 a:active,
 a:focus {
     color: var(--link-hover);
-    -webkit-text-decoration-line: underline;
-    text-decoration-line: underline;
-    text-decoration: underline;
     text-decoration-style: var(--main-border-style);
     text-decoration-thickness: var(--border-size);
     text-decoration-color: var(--accent-dark);
@@ -321,7 +318,7 @@ label {
 }
 
 .meta {
-    font-size: 0.85rem;
+    font-size: 0.85em;
     color: var(--meta-color);
     border-bottom: var(--border-size) var(--main-border-style) var(--accent);
     margin: var(--base-size) 0;
@@ -330,12 +327,12 @@ label {
 
 .summary {
     margin: var(--size-half) 0 var(--base-size);
-    font-size: 0.9rem;
+    font-size: 0.9em;
 }
 
 .thoughts {
     margin: var(--size-half) 0;
-    font-size: 0.85rem;
+    font-size: 0.85em;
     font-style: italic;
     color: var(--meta-color);
     background: var(--thoughts-background);
@@ -403,10 +400,6 @@ details summary {
         --legend-font-size: calc(var(--base-size) * 1.1);
         --max-legend-size: 15em;
     }
-
-    *, html{
-        --webkit-text-size-adjust: none;
-    }
     
     main {
         padding: var(--base-size);
@@ -441,10 +434,6 @@ details summary {
         --rec-header-size: 1.25em;
         --legend-font-size: calc(var(--base-size) * 1);
         --max-legend-size: 12em;
-    }
-
-    *, html{
-        --webkit-text-size-adjust: none;
     }
     
     main {
@@ -490,7 +479,7 @@ details summary {
     
     .filter-mode label {
         margin-left: var(--size-quarter);
-        font-size: 0.7rem;
+        font-size: 0.7em;
     }
 
     #footer{
