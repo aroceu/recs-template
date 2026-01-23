@@ -295,7 +295,7 @@
         author: "renaissance",
         wordCount: "10k",
         fandoms: ["Haikyuu!!"],
-        ships: "Kageyama/Hinata",
+        ships: "Oikawa/Sugawara",
         tropes: ["High School"],
         ratings: ["Teen"],
         warnings: "",
