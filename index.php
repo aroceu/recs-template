@@ -716,7 +716,7 @@ author: "TornThorn",
                             <li>This must be called <em>after</em> <code>&lt;link rel="stylesheet" href="style.css" /&gt;</code> or else it won't work.</li>
                             <li>Within <code>&lt;style type="text/css"&gt; &lt;/style&gt;</code>, copy and paste all of the root definitions from your <code>style.css</code> file (everything under <code>:root{}</code>), though you can omit the calculations.</li>
                             <li>Customize the colors, fonts, sizes, etc. for the rec page in this block.</li>
-                            <li>Do this for each individual rec page.</li> 
+                            <li>Repeat steps 1-4 for each individual rec page.</li> 
                             <li>Any styling rules not defined on the webpage will inherit the values from <code>style.css</code>, so if there are styles you want to keep across all rec pages, you can omit the lines from the webpage <code>&lt;style&gt;</code> block.</li> 
                             <li>Define shared rules in <code>style.css</code> if they need to be changed from the default.</li>
                             <ul><li>For example, if you want to keep the default white body background color, you can delete <code>--body-background: #fff;</code> from the <code>&lt;style&gt;</code> block, since it is already defined in <code>style.css</code>.</li></ul>
@@ -775,7 +775,7 @@ author: "TornThorn",
             
             <details class="init"><summary>Further Notes</summary>
 
-            <p>The stylesheet as well as the previews are available on <a href="https://github.com/aroceu/recs-template">Github</a>.</p>
+            <p>All webpage templates and the stylesheet, as well as the previews, are available on <a href="https://github.com/aroceu/recs-template">Github</a>.</p>
 
             <p>You might be interested in the <a href="../masterlist/">masterlist template</a> I made. The masterlist template only allows
             one filter at a time instead of multiple.</p> 
