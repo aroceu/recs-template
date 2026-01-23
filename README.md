@@ -2,6 +2,8 @@
 
 A set of templates for media and fanfiction recommendation pages.
 
+See https://kingdra.net/fan/recs for full documentation and customization options.
+
 ---
 
 ## Table of Contents
@@ -10,6 +12,7 @@ A set of templates for media and fanfiction recommendation pages.
 2. [Features](#features-both-templates)  
 3. [Fanfiction Template Differences](#fanfiction-template-differences)  
 4. [Installation](#installation)  
+5. [Previews](#previews)
 
 ---
 
@@ -18,6 +21,8 @@ A set of templates for media and fanfiction recommendation pages.
 These are templates for rec pages on an independent website where you can create `.html` and `.css` files (at minimum), applying filters with JavaScript.
 
 The templates have been pre-formatted for media and fanfiction recommendations in mind, but you can use them for whatever you want.
+
+See https://kingdra.net/fan/recs for full documentation and customization options.
 
 ---
 
@@ -77,4 +82,11 @@ Instructions for use and customization are within the code of each webpage templ
 
 ---
 
-See https://kingdra.net/fan/recs for full documentation and customization options.
+# Previews
+![Fanfiction Template Preview](previews/fanfiction.png)
+
+![Media Template Preview](previews/media.png)
+
+![Custom Fanfiction Template Preview](previews/fanfiction-custom.png)
+
+
