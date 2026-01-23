@@ -115,6 +115,10 @@
                 margin: 0;
             }
 
+            blockquote summary{
+                list-style: none;
+            }
+
             summary:hover{
                 cursor: pointer;
             }
