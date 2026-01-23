@@ -218,7 +218,7 @@ summary:hover{
 
 #reset {
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: var(--size-double);
 }
 
 button#resetFilters {
@@ -410,16 +410,21 @@ details summary {
     
     .filters {
         grid-template-columns: 1fr;
-        gap: var(--base-size);
+        gap: var(--size-double);
     }
     
     .filter-options {
         height: var(--max-legend-size);
     }
+
+    #reset {
+        text-align: center;
+        margin-bottom: var(--size-one-half);
+    }
     
     #results {
         grid-template-columns: repeat(auto-fit, minmax(var(--card-width), 1fr));
-        gap: var(--base-size);
+        gap: var(--size-double);
     }
 }
 
@@ -440,13 +445,13 @@ details summary {
     
     #blurb {
         font-size: 0.9em;
-        margin: var(--base-size) 0 var(--size-one-half);
-        padding: var(--size-half) 0 var(--base-size);
+        margin: var(--base-size) 0 var(--size-double);
+        padding: var(--size-half) 0 var(--size-one-half);
     }
     
     .filters {
         grid-template-columns: 1fr;
-        gap: var(--size-half);
+        gap: var(--size-one-half);
     }
     
     fieldset {
