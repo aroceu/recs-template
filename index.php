@@ -150,7 +150,7 @@
     opacity: 0.5;
 }
 
-a:hover, a:active, a:focus{
+.preview a:hover, .preview a:active, .preview a:focus{
     box-shadow: none;
     background: #e1f5f8;
 }
