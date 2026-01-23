@@ -38,7 +38,7 @@ The templates have been pre-formatted for media and fanfiction recommendations i
 
 - The **Medium** category has been changed to a **Fandom** category
 - Additional metadata for: **Link**, **Author**, **Word Count**, and **Ships**
-- Rec titles use `&lt;h3&gt;` instead of `&lt;h2&gt;` (for media recs), without a border bottom
+- Rec titles use `<h3&>` instead of `<h2>` (for media recs), without a border bottom
 - Rec titles include a **link to the work**, opening in a new tab
 
 Instructions for use and customization are within the code of each webpage template, in addition to the documentation below.
@@ -55,9 +55,9 @@ Instructions for use and customization are within the code of each webpage templ
 
 4. Open the `.html` file in a text editor (or your host's in-browser text editor), and modify it to your heart's content with your own text.
 
-5. Manually add and order labels for your rec filters in each category, under `&lt;div class="filters"&gt;`. See **Basic Customizations** for more detail.
+5. Manually add and order labels for your rec filters in each category, under `<div class="filters">`. See **Basic Customizations** for more detail.
 
-`&lt;label&gt;&lt;input type="checkbox" name="category" value="Tag"&gt; Tag (display text)&lt;/label&gt;`
+`<label><input type="checkbox" name="category" value="Tag"> Tag (display text)</label>`
 
 6. I advise you to not remove or modify the rating tags, as they are pretty standard. For media recs, you may also only want to do minimal edits to medium depending on what you are recommending.
 
