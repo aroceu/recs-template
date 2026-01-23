@@ -771,7 +771,7 @@ author: "TornThorn",
 
             <div id="footer">
 
-            <p><?php echo date('Y'); ?> &hearts; A <a href="https://kingdra.net/fan">kingdra.net</a> production </p>
+            <p><?php echo date('Y'); ?> &hearts; A <a href="https://fan.kingdra.net/">kingdra.net</a> production </p>
             </div>
 
             </main>
