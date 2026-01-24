@@ -155,6 +155,11 @@
     background: #e1f5f8;
 }
 
+a:hover, a:active, a:focus{
+    color: #ff8031;
+    text-decoration-color: var(--accent);
+}
+
 #footer{
     text-align: center;
     margin: 2em 0;
